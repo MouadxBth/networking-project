@@ -2,17 +2,29 @@
 
 This project is a simple recreation of a `Port Scanner` and a `Device Finder` within a specific network.
 
+![landing page](res/1.png)
+
 ## Port Scanner
 
-This is a placeholder
+![portscanner page](res/2.png)
+
+Here is a successful port scan on the ip `192.168.1.1`:
+
+![portscanner success](res/2.1.png)
 
 ## Device Finder
 
-This is a placeholder
+![devicefinder page](res/3.png)
+
+Here is a successful device scan on the network ip `192.168.1`:
+
+![devicefinder success](res/3.1.png)
 
 ## About
 
-This project was created with 🤍 by `Mouad Bouthaich` and `Younes Moustaquim`.
+This project was created with 🤍 by `Mouad Bouthaich` `Alaa El-hari` and `Younes Moustaquim`.
+
+![about page](res/4.png)
 
 ## Running the application
 
