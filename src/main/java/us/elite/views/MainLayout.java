@@ -1,19 +1,24 @@
 package us.elite.views;
 
 
+import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
+import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Footer;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Header;
 import com.vaadin.flow.component.orderedlayout.Scroller;
+import com.vaadin.flow.dom.ThemeList;
 import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.theme.lumo.Lumo;
 import com.vaadin.flow.theme.lumo.LumoUtility;
 import us.elite.components.appnav.AppNav;
 import us.elite.components.appnav.AppNavItem;
 import us.elite.views.about.AboutView;
 import us.elite.views.devicesfinder.DevicesFinderView;
+import us.elite.views.landing.LandingView;
 import us.elite.views.portscanner.PortScannerView;
 
 /**
@@ -36,6 +41,7 @@ public class MainLayout extends AppLayout {
         viewTitle = new H2();
         viewTitle.addClassNames(LumoUtility.FontSize.LARGE, LumoUtility.Margin.NONE);
 
+
         addToNavbar(true, toggle, viewTitle);
     }
 
@@ -54,6 +60,7 @@ public class MainLayout extends AppLayout {
         // For documentation, visit https://github.com/vaadin/vcf-nav#readme
         AppNav nav = new AppNav();
 
+        nav.addItem(new AppNavItem("Landing Page", LandingView.class, "las la-home"));
         nav.addItem(new AppNavItem("Port Scanner", PortScannerView.class, "la la-crosshairs"));
         nav.addItem(new AppNavItem("Devices Finder", DevicesFinderView.class, "la la-eye"));
         nav.addItem(new AppNavItem("About", AboutView.class, "la la-lightbulb"));
@@ -62,9 +69,7 @@ public class MainLayout extends AppLayout {
     }
 
     private Footer createFooter() {
-        Footer layout = new Footer();
-
-        return layout;
+        return new Footer();
     }
 
     @Override
