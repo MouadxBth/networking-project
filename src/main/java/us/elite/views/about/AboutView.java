@@ -19,8 +19,9 @@ public class AboutView extends VerticalLayout {
 
         add(new H2("This project was created by:"),
                 new HorizontalLayout(
-                        createProfileComponent("Mouad Bouthaich", "mouad.bouthaich@outlook.com"),
-                        createProfileComponent("Younes Moustaquim", "younes.moustaquim@outlook.com")));
+                        createProfileComponent("Mouad Bouthaich", "bouthaich.mouad@ucd.ma"),
+                        createProfileComponent("Alaa El-hari", "elhari.alaa@ucd.ma"),
+                        createProfileComponent("Younes Moustaquim", "moustaquim.younes@ucd.ma")));
 
         setSizeFull();
         setJustifyContentMode(JustifyContentMode.CENTER);
