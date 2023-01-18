@@ -1,7 +1,18 @@
 # Networking-project
 
-This project can be used as a starting point to create your own Vaadin application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+This project is a simple recreation of a `Port Scanner` and a `Device Finder` within a specific network.
+
+## Port Scanner
+
+This is a placeholder
+
+## Device Finder
+
+This is a placeholder
+
+## About
+
+This project was created with 🤍 by `Mouad Bouthaich` and `Younes Moustaquim`.
 
 ## Running the application
 
