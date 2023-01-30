@@ -1,4 +1,4 @@
-# Networking-project
+# Networking-project (Network-Utils)
 
 This project is a simple recreation of a `Port Scanner` and a `Device Finder` within a specific network.
 
